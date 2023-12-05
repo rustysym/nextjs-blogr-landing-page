@@ -9,7 +9,7 @@ const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-ubuntu",
-  display:"optional"
+  display:"swap"
 });
 export const metadata = {
   title: "Blogr Landing Page | Emre Kalfa",
