@@ -9,6 +9,7 @@ function HomePage() {
           src={"/bg-pattern-intro-desktop.svg"}
           width={1000}
           height={50}
+          alt=""
           className={
             "relative -top-full h-[85rem] left-1/4 object-contain scale-[2.2] -z-10"
           }
@@ -30,7 +31,7 @@ function HomePage() {
           </button>
         </div>
       </div>
-      <div className="mt-24 font-overpass">
+      <div className="flex flex-col h-min-screen mt-24 font-overpass">
         <h1 className="text-2xl lg:text-4xl text-center font-medium  text-blogr-very-dark-blue">
           Designed for the future
         </h1>
@@ -59,21 +60,23 @@ function HomePage() {
           </div>
           <div className="order-1 md:order-2">
             <div className="mb-12 lg:mb-0">
-            <picture>
+              <picture>
                 <source
                   media="(min-width: 900px)"
-                  srcset="/illustration-editor-desktop.svg"
+                  srcSet="/illustration-editor-desktop.svg"
                 />
                 <source
                   media="(min-width: 320px)"
-                  srcset="/illustration-editor-mobile.svg"
+                  srcSet="/illustration-editor-mobile.svg"
                 />
                 <img
+                  decoding="async"
+                  data-nimg="1"
+                  loading="lazy"
                   src="/illustration-laptop-desktop.svg"
                   className="relative -right-1/2 -translate-x-1/2 -translate-y-0 md:-translate-y-0 lg:-translate-y-1/4  scale-[1] md:-translate-x-1/4 md:scale-[1.2] lg:scale-[0.8] md:-right-1/2 "
                 />
               </picture>
-             
             </div>
           </div>
         </div>
@@ -85,6 +88,7 @@ function HomePage() {
                   src={"/bg-pattern-circles.svg"}
                   width={300}
                   height={50}
+                  alt=""
                   className="relative md:h-60 object-cover -top-2/4 -left-8 w-full md:w-1/2 scale-[0.9] md:scale-[1.7] -z-10"
                 />
               </div>
@@ -92,6 +96,7 @@ function HomePage() {
                 src={"/illustration-phones.svg"}
                 width={300}
                 height={50}
+                alt=""
                 className="absolute left-1/2 -translate-x-1/2  -top-1/4  md:-top-9 md:left-12 md:-translate-x-0 "
               />
             </div>
@@ -114,13 +119,16 @@ function HomePage() {
               <picture>
                 <source
                   media="(min-width: 900px)"
-                  srcset="/illustration-laptop-desktop.svg"
+                  srcSet="/illustration-laptop-desktop.svg"
                 />
                 <source
                   media="(min-width: 320px)"
-                  srcset="/illustration-laptop-mobile.svg"
+                  srcSet="/illustration-laptop-mobile.svg"
                 />
                 <img
+                 decoding="async"
+                 data-nimg="1"
+                 loading="lazy"
                   src="/illustration-laptop-desktop.svg"
                   className="relative left-1/2 md:left-1/3 -top-1/3 -translate-x-1/2 lg:-translate-x-2/4 scale-[1] md:scale-[1.2] lg:scale-[0.9] "
                 />

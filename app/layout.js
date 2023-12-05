@@ -4,8 +4,9 @@ import "./reset.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-const overpass = Overpass({ subsets: ["latin"], variable: "--font-overpass"});
+const overpass = Overpass({ subsets: ["latin"], variable: "--font-overpass",preload:true});
 const ubuntu = Ubuntu({
+  preload:true,
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-ubuntu",

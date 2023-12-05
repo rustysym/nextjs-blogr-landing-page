@@ -25,9 +25,9 @@ function Header() {
     return isOpen ? "flex" : "absolute";
   };
   return (
-    <header className="absolute w-full p-12 font-overpass md:font-ubuntu antialiased md:subpixel-antialiased  z-50">
-      <div className={`${handleMenu()} absolute  ml-0 md:ml-12`}>
-        <Image src={"/logo.svg"} width={100} height={50} />
+    <header className="absolute w-full p-12 font-overpass md:font-ubuntu z-50">
+      <div className={`${handleMenu()} absolute md:ml-12`}>
+        <Image src={"/logo.svg"} width={100} height={50} alt=""/>
       </div>
       <div className="absolute right-12 top-14 md:hidden md:right-8">
         <button onClick={() => setIsOpen(!isOpen)}>
@@ -44,7 +44,7 @@ function Header() {
           isOpen ? "flex" : "hidden"
         } flex-col justify-center bg-white rounded-md mt-20 md:mt-0 md:bg-transparent md:flex-row md:justify-between font-normal text-sm ml-0 md:ml-52 h-auto md:h-10 pt-4 md:p-0 md:flex`}
       >
-        <div className=" flex flex-col md:items-center md:flex-row text-blogr-very-dark-blue md:text-white ">
+        <div className="flex flex-col md:items-center md:flex-row text-blogr-very-dark-blue md:text-white ">
           <div className="flex flex-col -space-y-6 -mb-8 md:-mb-0 md:-space-y-0 md:ml-4 items-center text-base md:text-normal md:font-normal font-semibold md:text-normal md:flex-row md:space-x-2  md:items-start">
             <div
               className="group relative cursor-pointer py-2 text-center"
@@ -59,13 +59,16 @@ function Header() {
                 <picture>
                   <source
                     media="(min-width: 900px)"
-                    srcset="/icon-arrow-light.svg"
+                    srcSet="/icon-arrow-light.svg"
                   />
                   <source
                     media="(min-width: 320px)"
-                    srcset="/icon-arrow-dark.svg"
+                    srcSet="/icon-arrow-dark.svg"
                   />
                   <img
+                   decoding="async"
+                   data-nimg="1"
+                   loading="lazy"
                     src="/icon-arrow-light.svg"
                     className={`${
                       dropdown.key == "first" ? "rotate-180" : ""
@@ -109,13 +112,16 @@ function Header() {
                 <picture>
                   <source
                     media="(min-width: 900px)"
-                    srcset="/icon-arrow-light.svg"
+                    srcSet="/icon-arrow-light.svg"
                   />
                   <source
                     media="(min-width: 320px)"
-                    srcset="/icon-arrow-dark.svg"
+                    srcSet="/icon-arrow-dark.svg"
                   />
                   <img
+                   decoding="async"
+                   data-nimg="1"
+                   loading="lazy"
                     src="/icon-arrow-light.svg"
                     className={`${
                       dropdown.key == "second" ? "rotate-180" : ""
@@ -156,13 +162,16 @@ function Header() {
                 <picture>
                   <source
                     media="(min-width: 900px)"
-                    srcset="/icon-arrow-light.svg"
+                    srcSet="/icon-arrow-light.svg"
                   />
                   <source
                     media="(min-width: 320px)"
-                    srcset="/icon-arrow-dark.svg"
+                    srcSet="/icon-arrow-dark.svg"
                   />
                   <img
+                   decoding="async"
+                   data-nimg="1"
+                   loading="lazy"
                     src="/icon-arrow-light.svg"
                     className={`${
                       dropdown.key == "third" ? "rotate-180" : ""
