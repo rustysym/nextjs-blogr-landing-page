@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  -webkit-text-stroke: 0.4px;
+  -webkit-text-stroke: px rgba(0, 0, 0, 0.1);
+}

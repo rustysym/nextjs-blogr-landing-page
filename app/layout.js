@@ -4,23 +4,27 @@ import "./reset.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-const overpass = Overpass({ subsets: ["latin"], variable: "--font-overpass",preload:true});
+const overpass = Overpass({
+  subsets: ["latin"],
+  variable: "--font-overpass",
+  preload: true,
+});
 const ubuntu = Ubuntu({
-  preload:true,
+  preload: true,
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-ubuntu",
-  display:"swap"
 });
 export const metadata = {
   title: "Blogr Landing Page | Emre Kalfa",
-  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${overpass.variable} ${ubuntu.variable} antialiased md:subpixel-antialiased`}>
+      <body
+        className={`${overpass.variable} ${ubuntu.variable} antialiased md:subpixel-antialiased`}
+      >
         <Header />
         {children}
         <Footer />

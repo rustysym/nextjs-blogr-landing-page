@@ -24,10 +24,10 @@ function HomePage() {
         </h4>
         <div className="flex flex-row justify-center mt-12 space-x-6 text-white">
           <button className="bg-white w-28 h-10 rounded-full text-blogr-cta-text font-bold text-sm hover:bg-blogr-cta-hover hover:text-white duration-200">
-            Start for Free
+            <a>Start for Free</a>
           </button>
           <button className="border-white border rounded-full w-28 h-10 text-xs font-semibold tracking-widest  text-center hover:bg-white hover:text-blogr-cta-text duration-200">
-            Learn More
+          <a>Learn More</a>
           </button>
         </div>
       </div>
