@@ -79,7 +79,7 @@ function Header() {
               <div
                 className={`${
                   dropdown.key == "first" ? "invisible" : "hidden"
-                } md:invisible relative md:absolute md:flex z-50 w-full flex-col bg-gray-200 md:bg-white rounded-md py-1 px-20 md:px-4 text-gray-800  group-hover:visible`}
+                } md:invisible relative md:absolute md:flex z-50 w-full flex-col bg-gray-200 md:bg-white rounded-md py-1 px-20 md:px-4 text-gray-800  group-hover:visible items-center`}
               >
                 <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-md md:text-sm  text-blogr-very-dark-grayish-blue hover:text-black md:mx-2">
                   Overview
@@ -132,7 +132,7 @@ function Header() {
               <div
                 className={`${
                   dropdown.key == "second" ? "invisible" : "hidden"
-                } md:invisible relative md:absolute md:flex z-50 w-full flex-col bg-gray-200 md:bg-white rounded-md py-1 px-24 md:px-4 text-gray-800  group-hover:visible`}
+                } md:invisible relative md:absolute md:flex z-50 w-full flex-col bg-gray-200 md:bg-white rounded-md py-1 px-24 md:px-4 text-gray-800  group-hover:visible items-center`}
               >
                 <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-md md:text-sm text-blogr-very-dark-grayish-blue hover:text-black md:mx-2">
                   About
@@ -182,7 +182,7 @@ function Header() {
               <div
                 className={`${
                   dropdown.key == "third" ? "invisible" : "hidden"
-                } md:invisible relative md:absolute md:flex z-50 w-full flex-col bg-gray-200 md:bg-white rounded-md py-1 px-24 md:px-4 text-gray-800  group-hover:visible`}
+                } md:invisible relative md:absolute md:flex z-50 w-full flex-col bg-gray-200 md:bg-white rounded-md py-1 px-24 md:px-4 text-gray-800  group-hover:visible items-center`}
               >
                 <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-md md:text-sm text-blogr-very-dark-grayish-blue hover:text-black md:mx-2">
                   Contact
