@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="relative bottom-0 bg-blogr-footer-gray w-full h-auto mt-12 md:mt-0 pb-12 rounded-tr-[3rem] font-ubuntu">
-      <div className="grid grid-cols-1 md:grid-cols-4 place-items-center md:place-items-start pt-12 px-20 lg:pt-14 lg:px-24">
+      <div className="grid grid-cols-1 md:grid-cols-4 place-items-center md:place-items-start space-y-12 md:space-y-0 pt-12 px-20 lg:pt-14 lg:px-24">
         <div>
           <Image src={"/logo.svg"} width={70} height={50} alt=""/>
         </div>
