@@ -47,13 +47,13 @@ function Header() {
         <div className="flex flex-col md:items-center md:flex-row text-blogr-very-dark-blue md:text-white ">
           <div className="flex flex-col -space-y-6 -mb-8 md:-mb-0 md:-space-y-0 md:ml-4 items-center text-base md:text-normal md:font-normal font-semibold md:text-normal md:flex-row md:space-x-2  md:items-start">
             <div
-              className="group relative cursor-pointer py-2 text-center hover:underline"
+              className="group relative cursor-pointer py-2 text-center md:hover:underline"
               onClick={() => dropdownHandle("first")}
               onMouseEnter={() => dropdownHandle("first")}
               onMouseLeave={() => dropdownHandle("first")}
             >
               <div className="flex items-center justify-center px-4 md:justify-between">
-                <a className=" text-blogr-very-dark-blue md:text-white menu-hover my-2 py-2 text-base font-semibold md:font-normal  lg:mx-4">
+                <a className=" text-blogr-very-dark-blue md:text-white menu-hover my-2 py-2 text-base font-semibold md:font-normal lg:mx-4">
                   Product
                 </a>
                 <picture>
@@ -79,7 +79,7 @@ function Header() {
               <div
                 className={`${
                   dropdown.key == "first" ? "invisible" : "hidden"
-                } md:invisible relative md:absolute md:flex z-50 w-full md:w-28 flex-col bg-gray-200 md:bg-white rounded-md py-1 px-24 md:px-2 text-gray-800  group-hover:visible items-start`}
+                } md:invisible relative md:absolute md:flex z-50 w-full md:w-28 flex-col bg-gray-200 md:bg-white rounded-md py-1 px-20 md:px-2 text-gray-800  group-hover:visible items-start`}
               >
                 <a className="my-2 block border-b border-gray-100 py-1  text-md md:text-sm  text-blogr-very-dark-grayish-blue hover:text-black md:mx-2">
                   Overview
@@ -100,7 +100,7 @@ function Header() {
               </div>
             </div>
             <div
-              className="group relative cursor-pointer py-2 text-center hover:underline"
+              className="group relative cursor-pointer py-2 text-center md:hover:underline"
               onClick={() => dropdownHandle("second")}
               onMouseEnter={() => dropdownHandle("second")}
               onMouseLeave={() => dropdownHandle("second")}
@@ -150,7 +150,7 @@ function Header() {
               </div>
             </div>
             <div
-              className="group relative cursor-pointer py-2 text-center hover:underline"
+              className="group relative cursor-pointer py-2 text-center md:hover:underline"
               onClick={() => dropdownHandle("third")}
               onMouseEnter={() => dropdownHandle("third")}
               onMouseLeave={() => dropdownHandle("third")}
@@ -182,7 +182,7 @@ function Header() {
               <div
                 className={`${
                   dropdown.key == "third" ? "invisible" : "hidden"
-                } md:invisible relative md:absolute md:flex z-50 w-full md:w-28 flex-col bg-gray-200 md:bg-white rounded-md py-1 px-24 md:px-2 text-gray-800  group-hover:visible items-start`}
+                } md:invisible relative md:absolute md:flex z-50 w-full md:w-28 flex-col bg-gray-200 md:bg-white rounded-md py-1 px-20 md:px-2 text-gray-800  group-hover:visible items-start`}
               >
                 <a className="my-2 block border-b border-gray-100 py-1  text-md md:text-sm text-blogr-very-dark-grayish-blue hover:text-black md:mx-2">
                   Contact
